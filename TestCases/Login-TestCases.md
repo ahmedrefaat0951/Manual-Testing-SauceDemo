@@ -59,3 +59,36 @@ The user is not logged in, and the following error message is displayed:
 ### Status
 
 **PASS ✅**
+
+---
+
+## TC-003 — Verify Login with Invalid Password
+
+**Preconditions:** User is on the SauceDemo login page.
+
+### Test Data
+
+- Username: `standard_user`
+- Password: `1234`
+
+### Steps
+
+1. Enter the username.
+2. Enter the password.
+3. Click the **Login** button.
+
+### Expected Result
+
+The user is not logged in, and the following error message is displayed:
+
+> **Epic sadface: Username and password do not match any user in this service**
+
+### Actual Result
+
+The user is not logged in, and the following error message is displayed:
+
+> **Epic sadface: Username and password do not match any user in this service**
+
+### Status
+
+**PASS ✅**
