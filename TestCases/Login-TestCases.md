@@ -125,3 +125,36 @@ The user is not logged in, and the following error message is displayed:
 ### Status
 
 **PASS ✅**
+
+---
+
+## TC-005 — Verify Login with Empty Password
+
+**Preconditions:** User is on the SauceDemo login page.
+
+### Test Data
+
+- Username: `standard_user`
+- Password: *(Leave empty)*
+
+### Steps
+
+1. Enter the username.
+2. Leave the Password field empty.
+3. Click the **Login** button.
+
+### Expected Result
+
+The user is not logged in, and the following error message is displayed:
+
+> **Epic sadface: Password is required**
+
+### Actual Result
+
+The user is not logged in, and the following error message is displayed:
+
+> **Epic sadface: Password is required**
+
+### Status
+
+**PASS ✅**
