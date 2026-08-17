@@ -1,3 +1,5 @@
+# UI Test Cases
+
 ## TC-006 — Verify Required-Field Error Message Is Fully Visible and Readable
 
 **Preconditions:** User is on the SauceDemo login page.
