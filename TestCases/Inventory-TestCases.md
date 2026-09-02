@@ -69,3 +69,27 @@ The products were displayed in ascending order by price, from lowest to highest.
 ### Status
 
 **PASS ✅**
+
+---
+
+## TC-011 — Verify Products Can Be Sorted by Price (High to Low)
+
+**Preconditions:** User is logged in as `standard_user` and is on the Products page.
+
+### Steps
+
+1. Open the sorting dropdown.
+2. Select **Price (high to low)**.
+3. Observe the order of the products.
+
+### Expected Result
+
+The products are displayed in descending order by price, from highest to lowest.
+
+### Actual Result
+
+The products were displayed in descending order by price, from highest to lowest.
+
+### Status
+
+**PASS ✅**
