@@ -93,3 +93,9 @@ The products were displayed in descending order by price, from highest to lowest
 ### Status
 
 **PASS ✅**
+
+---
+
+## Exploratory Testing
+
+During exploratory testing of the Products page, the sorting dropdown was interacted with beyond the predefined sorting scenarios. Clicking the dropdown arrow was found to have no effect, while clicking the displayed sort option text opened the dropdown. This behavior was documented as `BUG-001`.
