@@ -96,6 +96,36 @@ The products were displayed in descending order by price, from highest to lowest
 
 ---
 
+## TC-012 — Verify Add to Cart Functionality
+
+**Preconditions:** User is logged in as `standard_user` and is on the Products page.
+
+**Test Data:** Any available product on the Products page.
+
+### Steps
+
+1. Locate a product.
+2. Click the **Add to cart** button.
+3. Observe the product card and cart icon.
+
+### Expected Result
+
+* The **Add to cart** button changes to **Remove**.
+* The cart icon displays a badge showing **1**.
+* The selected product is added to the cart.
+
+### Actual Result
+
+* The **Add to cart** button changed to **Remove**.
+* The cart icon displayed a badge showing **1**.
+* The selected product was added to the cart.
+
+### Status
+
+**PASS ✅**
+
+---
+
 ## Exploratory Testing
 
 During exploratory testing of the Products page, the sorting dropdown was interacted with beyond the predefined sorting scenarios. Clicking the dropdown arrow was found to have no effect, while clicking the displayed sort option text opened the dropdown. This behavior was documented as `BUG-001`.
