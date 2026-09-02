@@ -126,6 +126,36 @@ The products were displayed in descending order by price, from highest to lowest
 
 ---
 
+## TC-013 — Verify Remove from Cart Functionality
+
+**Preconditions:** User is logged in as `standard_user` and is on the Products page.
+
+**Test Data:** Any available product on the Products page that has been added to the cart.
+
+### Steps
+
+1. Locate a product that has been added to the cart.
+2. Click the **Remove** button.
+3. Observe the product card and cart icon.
+
+### Expected Result
+
+* The **Remove** button changes to **Add to cart**.
+* The cart badge count is updated accordingly.
+* The selected product is removed from the cart.
+
+### Actual Result
+
+* The **Remove** button changed to **Add to cart**.
+* The cart badge count is updated accordingly.
+* The selected product was removed from the cart.
+
+### Status
+
+**PASS ✅**
+
+---
+
 ## Exploratory Testing
 
 During exploratory testing of the Products page, the sorting dropdown was interacted with beyond the predefined sorting scenarios. Clicking the dropdown arrow was found to have no effect, while clicking the displayed sort option text opened the dropdown. This behavior was documented as `BUG-001`.
