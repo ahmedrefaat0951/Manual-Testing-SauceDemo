@@ -53,3 +53,56 @@
 ### Status
 
 **PASS ✅**
+
+---
+
+## TC-019 — Verify Multiple Products Are Displayed Correctly in Cart
+
+**Preconditions:** User is logged in as `standard_user` and is on the Products page.
+
+### Steps
+
+1. Add two different products to the cart.
+2. Click the shopping cart icon.
+3. Observe the Cart page and cart badge.
+
+### Expected Result
+
+* Both added products are displayed in the Cart.
+* The cart badge displays **2**.
+
+### Actual Result
+
+* Both added products were displayed in the Cart.
+* The cart badge displayed **2**.
+
+### Status
+
+**PASS ✅**
+
+---
+
+## TC-020 — Verify Continue Shopping Returns to Products Page
+
+**Preconditions:** User is logged in as `standard_user` and is on the Cart page with one product added to the cart.
+
+### Steps
+
+1. Click the **Continue Shopping** button.
+2. Observe the page and cart icon.
+
+### Expected Result
+
+* The Products page is displayed.
+* The previously added product remains in the cart.
+* The cart badge displays **1**.
+
+### Actual Result
+
+* The Products page was displayed.
+* The previously added product remained in the cart.
+* The cart badge displayed **1**.
+
+### Status
+
+**PASS ✅**
