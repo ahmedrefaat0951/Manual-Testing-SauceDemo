@@ -62,3 +62,33 @@ The user was redirected to the **Checkout: Overview** page without displaying a 
 ### Status
 
 **PASS ✅**
+
+## TC-025 — Verify User Cannot Proceed with an Empty First Name
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+**Test Data:**
+
+* First Name: *(Leave empty)*
+* Last Name: `Refaat`
+* ZIP/Postal Code: `12345`
+
+### Steps
+
+1. Leave the **First Name** field empty.
+2. Enter a valid last name in the **Last Name** field.
+3. Enter a valid ZIP/Postal Code in the **ZIP/Postal Code** field.
+4. Click the **Continue** button.
+5. Observe the resulting page.
+
+### Expected Result
+
+The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **First Name** field is required should be displayed.
+
+### Actual Result
+
+The user remained on the **Checkout: Your Information** page, and the error message `Error: First Name is required` was displayed.
+
+### Status
+
+**PASS ✅**
