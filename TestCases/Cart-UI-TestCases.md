@@ -27,3 +27,31 @@
 ### Status
 
 **PASS ✅**
+
+---
+
+## TC-022 — Verify Cart Item Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user` and is on the Cart page with at least two products added to the cart.
+
+### Steps
+
+1. Observe the overall layout of a cart item.
+2. Observe the placement and alignment of the product name, description, and price.
+3. Observe the placement and alignment of the **Remove** button.
+
+### Expected Result
+
+* Each cart item is displayed consistently within the Cart page.
+* The product name, description, and price are clearly visible and properly aligned.
+* The **Remove** button is clearly visible and properly aligned.
+
+### Actual Result
+
+* Each cart item was displayed consistently within the Cart page.
+* The product name, description, and price were clearly visible and properly aligned.
+* The **Remove** button was clearly visible and properly aligned.
+
+### Status
+
+**PASS ✅**
