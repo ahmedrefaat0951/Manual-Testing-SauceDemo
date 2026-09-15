@@ -122,3 +122,33 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 ### Status
 
 **PASS ✅**
+
+## TC-027 — Verify User Cannot Proceed with an Empty ZIP/Postal Code
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+**Test Data:**
+
+* First Name: `Ahmed`
+* Last Name: `Refaat`
+* ZIP/Postal Code: *(Leave empty)*
+
+### Steps
+
+1. Enter a valid first name in the **First Name** field.
+2. Enter a valid last name in the **Last Name** field.
+3. Leave the **ZIP/Postal Code** field empty.
+4. Click the **Continue** button.
+5. Observe the resulting page.
+
+### Expected Result
+
+The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **ZIP/Postal Code** field is required should be displayed.
+
+### Actual Result
+
+The user remained on the **Checkout: Your Information** page, and the error message `Error: Postal Code is required` was displayed.
+
+### Status
+
+**PASS ✅**
