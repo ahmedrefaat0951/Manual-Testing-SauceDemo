@@ -92,3 +92,33 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 ### Status
 
 **PASS ✅**
+
+## TC-026 — Verify User Cannot Proceed with an Empty Last Name
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+**Test Data:**
+
+* First Name: `Ahmed`
+* Last Name: *(Leave empty)*
+* ZIP/Postal Code: `12345`
+
+### Steps
+
+1. Enter a valid first name in the **First Name** field.
+2. Leave the **Last Name** field empty.
+3. Enter a valid ZIP/Postal Code in the **ZIP/Postal Code** field.
+4. Click the **Continue** button.
+5. Observe the resulting page.
+
+### Expected Result
+
+The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **Last Name** field is required should be displayed.
+
+### Actual Result
+
+The user remained on the **Checkout: Your Information** page, and the error message `Error: Last Name is required` was displayed.
+
+### Status
+
+**PASS ✅**
