@@ -183,3 +183,35 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 
 **PASS ✅**
 
+## TC-029 — Verify Checkout: Your Information Validation Feedback Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+**Test Data:**
+
+* First Name: *(Leave empty)*
+* Last Name: `Refaat`
+* ZIP/Postal Code: `12345`
+
+### Steps
+
+1. Leave the **First Name** field empty.
+2. Enter `Refaat` in the **Last Name** field.
+3. Enter `12345` in the **ZIP/Postal Code** field.
+4. Click the **Continue** button.
+5. Observe the displayed error message and the visual validation indicators on all three fields.
+
+### Expected Result
+
+* An error message indicating that the **First Name** field is required is displayed.
+* The **First Name** field is visually identified as invalid.
+* The **Last Name** and **ZIP/Postal Code** fields, which contain valid values, are not visually identified as invalid.
+
+### Actual Result
+
+* The error message `Error: First Name is required` was displayed.
+* The **First Name**, **Last Name**, and **ZIP/Postal Code** fields were all visually marked as invalid, even though only the **First Name** field was empty and identified by the error message.
+
+### Status
+
+**FAIL ❌**
