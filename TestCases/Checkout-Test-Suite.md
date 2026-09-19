@@ -333,3 +333,38 @@ The calculated tax percentage was consistent across all three products.
 ### Status
 
 **PASS ✅**
+
+## TC-033 — Verify Checkout: Overview Price Calculation for Multiple Products
+
+**Preconditions:** User is logged in as `standard_user`, has the specified products added to the Cart, and is on the **Checkout: Overview** page.
+
+**Test Data:**
+
+| Product                 | Item Price |
+| ----------------------- | ---------: |
+| **Sauce Labs Onesie**   |    `$7.99` |
+| **Sauce Labs Backpack** |   `$29.99` |
+
+### Steps
+
+1. Observe the **Item total**, **Tax**, and **Total** values in the **Price Total** section.
+2. Calculate the expected **Item total** using the prices of all products in the Cart.
+3. Calculate the expected **Tax** using the observed 8% tax rate.
+4. Calculate the expected **Total** using the calculated Item total and Tax.
+5. Compare the calculated values with the displayed **Item total**, **Tax**, and **Total**.
+
+### Expected Result
+
+* The displayed **Item total** should equal the combined price of all products in the Cart.
+* The displayed **Tax** should be consistent with the observed 8% tax rate.
+* The displayed **Total** should equal the Item total plus Tax.
+
+### Actual Result
+
+* The combined product price was `$37.98`, which matched the displayed **Item total** of `$37.98`.
+* The calculated tax was `$3.04`, which matched the displayed **Tax** of `$3.04`.
+* The calculated total was `$41.02`, which matched the displayed **Total** of `$41.02`.
+
+### Status
+
+**PASS ✅**
