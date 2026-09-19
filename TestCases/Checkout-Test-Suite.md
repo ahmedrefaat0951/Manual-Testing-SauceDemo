@@ -215,3 +215,26 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 ### Status
 
 **FAIL ❌**
+
+---
+
+## Checkout: Your Information — Exploratory Testing
+
+### Exploratory Finding — Checkout Fields Accept Non-Standard Input
+
+During exploratory testing, non-standard values were entered into the checkout customer-information fields.
+
+The following inputs were accepted and allowed the user to proceed to the **Checkout: Overview** page:
+
+| First Name | Last Name | ZIP/Postal Code | Result |
+|---|---|---|---|
+| `1` | `Refaat` | `12345` | Accepted |
+| `Ahmed` | `1` | `12345` | Accepted |
+| `Ahmed` | `Refaat` | `a` | Accepted |
+| `@` | `@` | `@` | Accepted |
+
+**Observation:**
+
+The application accepted these non-standard values without displaying a validation error.
+
+**Status:** Investigation required
