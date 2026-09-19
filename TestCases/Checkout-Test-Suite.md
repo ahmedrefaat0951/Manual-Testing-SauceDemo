@@ -269,3 +269,32 @@ The application accepted these non-standard values without displaying a validati
 ### Status
 
 **PASS ✅**
+
+## TC-031 — Verify Checkout: Overview Price Total Calculation
+
+**Preconditions:** User is logged in as `standard_user`, has the specified product added to the Cart, and is on the **Checkout: Overview** page.
+
+**Test Data:**
+
+* Product: **Sauce Labs Bike Light**
+* Item Price: `$9.99`
+
+### Steps
+
+1. Observe the **Item total**, **Tax**, and **Total** values in the **Price Total** section.
+2. Calculate the expected Total using the displayed Item total and Tax values.
+3. Compare the calculated amount with the displayed **Total**.
+
+### Expected Result
+
+The displayed **Total** should equal the sum of the **Item total** and **Tax** values.
+
+### Actual Result
+
+The **Item total** was `$9.99` and the **Tax** was `$0.80`.
+
+The calculated total was `$10.79`, which matched the displayed **Total** of `$10.79`.
+
+### Status
+
+**PASS ✅**
