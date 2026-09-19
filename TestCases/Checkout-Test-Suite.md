@@ -29,9 +29,7 @@ The user was redirected to the **Checkout: Your Information** page.
 
 ---
 
-## Checkout: Your Information
-
-**Functional Test Cases**
+## Checkout: Your Information — Functional Test Cases
 
 ## TC-024 — Verify User Can Proceed with Valid Customer Information
 
@@ -152,3 +150,36 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 ### Status
 
 **PASS ✅**
+
+---
+
+## Checkout: Your Information — UI Test cases
+
+## TC-028 — Verify Checkout: Your Information Page Layout Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+### Steps
+
+1. Observe the overall layout of the **Checkout: Your Information** page.
+2. Observe the alignment, spacing, and positioning of the form elements.
+3. Verify all buttons and labels are displayed correctly.
+
+### Expected Result
+
+* The page title is clearly visible.
+* The form elements are properly aligned and consistently spaced.
+* The **First Name**, **Last Name**, and **ZIP/Postal Code** fields are clearly visible with their corresponding labels.
+* The **Continue** and **Cancel** buttons are clearly visible and properly positioned.
+
+### Actual Result
+
+* The page title was clearly visible.
+* The form elements were properly aligned and consistently spaced.
+* The **First Name**, **Last Name**, and **ZIP/Postal Code** fields were clearly visible with their corresponding labels.
+* The **Continue** and **Cancel** buttons were clearly visible and properly positioned.
+
+### Status
+
+**PASS ✅**
+
