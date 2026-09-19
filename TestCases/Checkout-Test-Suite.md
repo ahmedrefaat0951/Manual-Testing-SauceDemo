@@ -238,3 +238,34 @@ The following inputs were accepted and allowed the user to proceed to the **Chec
 The application accepted these non-standard values without displaying a validation error.
 
 **Status:** Investigation required
+
+---
+
+## Checkout: Overview — Functional Test Cases
+
+## TC-030 — Verify Cart Products Are Preserved in Checkout: Overview
+
+**Preconditions:** User is logged in as `standard_user`, has at least two products added to the Cart, and is on the Cart page.
+
+### Steps
+
+1. Observe the products displayed in the Cart before proceeding.
+2. Click the **Checkout** button.
+3. Enter valid customer information on the **Checkout: Your Information** page.
+4. Click the **Continue** button.
+5. Observe the products displayed on the **Checkout: Overview** page.
+6. Compare the products displayed in the Cart with those displayed on the **Checkout: Overview** page.
+
+### Expected Result
+
+* All products added to the Cart are displayed on the **Checkout: Overview** page.
+* No product is missing or unexpectedly added during the transition from the Cart to the **Checkout: Overview** page.
+
+### Actual Result
+
+* All products added to the Cart were displayed on the **Checkout: Overview** page.
+* No product was missing or unexpectedly added during the transition.
+
+### Status
+
+**PASS ✅**
