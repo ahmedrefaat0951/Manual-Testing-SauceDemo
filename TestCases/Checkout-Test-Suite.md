@@ -298,3 +298,38 @@ The calculated total was `$10.79`, which matched the displayed **Total** of `$10
 ### Status
 
 **PASS ✅**
+
+## TC-032 — Verify Checkout: Overview Tax Calculation Consistency
+
+**Preconditions:** User is logged in as `standard_user`, has the specified product added to the Cart, and is on the **Checkout: Overview** page.
+
+**Test Data:**
+
+| Product                   | Item Price |
+| ------------------------- | ---------: |
+| **Sauce Labs Bike Light** |    `$9.99` |
+| **Sauce Labs Backpack**   |   `$29.99` |
+| **Sauce Labs Onesie**     |    `$7.99` |
+
+### Steps
+
+1. Observe the **Item total** and **Tax** values in the **Price Total** section for the **Sauce Labs Bike Light**.
+2. Calculate the tax percentage based on the displayed **Item total** and **Tax** values.
+3. Repeat steps 1 and 2 for the **Sauce Labs Backpack** and **Sauce Labs Onesie**.
+4. Compare the calculated tax percentages for all three products.
+
+### Expected Result
+
+The application should apply a consistent tax percentage to the item total across products with different prices.
+
+### Actual Result
+
+* **Sauce Labs Bike Light:** Item total was `$9.99`, and Tax was `$0.80`, corresponding to approximately **8%**.
+* **Sauce Labs Backpack:** Item total was `$29.99`, and Tax was `$2.40`, corresponding to approximately **8%**.
+* **Sauce Labs Onesie:** Item total was `$7.99`, and Tax was `$0.64`, corresponding to approximately **8%**.
+
+The calculated tax percentage was consistent across all three products.
+
+### Status
+
+**PASS ✅**
