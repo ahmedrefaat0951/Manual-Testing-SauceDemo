@@ -368,3 +368,28 @@ The calculated tax percentage was consistent across all three products.
 ### Status
 
 **PASS ✅**
+
+## TC-034 — Verify Cancel Button Behavior on Checkout: Overview Page
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Overview** page.
+
+### Steps
+
+1. Observe the products currently displayed on the **Checkout: Overview** page.
+2. Click the **Cancel** button.
+3. Observe the resulting page.
+4. Compare the Cart contents with those observed before clicking **Cancel**.
+
+### Expected Result
+
+* The user is redirected to the **Cart** page.
+* The products previously added to the Cart remain unchanged.
+
+### Actual Result
+
+* The user was redirected to the **Products** page.
+* The products previously added to the Cart remained unchanged.
+
+### Status
+
+**FAIL ❌**
