@@ -467,3 +467,25 @@ Each product displayed its corresponding name, description, and price. The produ
 ### Status
 
 **PASS ✅**
+
+## TC-038 — Verify Checkout: Overview Order Summary Information Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user`, has at least two products added to the Cart, and is on the **Checkout: Overview** page.
+
+### Steps
+
+1. Observe the **Payment Information**, **Shipping Information**, and **Price Total** sections.
+2. Verify the information displayed in each section.
+3. Verify the information is properly aligned and clearly visible.
+
+### Expected Result
+
+The **Payment Information**, **Shipping Information**, and **Price Total** sections display the applicable information correctly, with proper alignment and visibility and no clipping, overlapping, or improper positioning.
+
+### Actual Result
+
+The **Payment Information**, **Shipping Information**, and **Price Total** sections displayed the applicable information correctly, with proper alignment and visibility and no clipping, overlapping, or improper positioning.
+
+### Status
+
+**PASS ✅**
