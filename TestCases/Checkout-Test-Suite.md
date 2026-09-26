@@ -414,3 +414,33 @@ The user was redirected to the **Checkout: Complete!** page.
 ### Status
 
 **PASS ✅**
+
+---
+
+## Checkout: Overview — UI Test Cases
+
+## TC-036 — Verify Checkout: Overview Page Layout Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Overview** page.
+
+### Steps
+
+1. Observe the overall layout of the **Checkout: Overview** page.
+2. Verify the content is properly aligned and spaced.
+3. Verify the **Cancel** and **Finish** buttons are visible and properly positioned.
+
+### Expected Result
+
+* The **Checkout: Overview** page title is displayed correctly.
+* The checkout sections and their content are clearly visible and properly aligned.
+* Consistent spacing is maintained between the different sections.
+* The **Cancel** and **Finish** buttons are visible and properly positioned.
+
+### Actual Result
+
+The **Checkout: Overview** page title, checkout sections, and action buttons were displayed correctly with proper alignment, spacing, and positioning.
+
+### Status
+
+**PASS ✅**
+
