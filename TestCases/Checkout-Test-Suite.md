@@ -444,3 +444,26 @@ The **Checkout: Overview** page title, checkout sections, and action buttons wer
 
 **PASS ✅**
 
+## TC-037 — Verify Checkout: Overview Product Information Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user`, has at least two products added to the Cart, and is on the **Checkout: Overview** page.
+
+### Steps
+
+1. Observe the products displayed on the **Checkout: Overview** page.
+2. Verify each product displays its name, description, and price.
+3. Verify the product information is properly aligned and clearly visible.
+
+### Expected Result
+
+* Each product displays its corresponding name, description, and price.
+* Product information is properly aligned and clearly visible.
+* No product information is clipped, overlapping, or improperly positioned.
+
+### Actual Result
+
+Each product displayed its corresponding name, description, and price. The product information was properly aligned and clearly visible, with no clipping, overlapping, or improper positioning.
+
+### Status
+
+**PASS ✅**
