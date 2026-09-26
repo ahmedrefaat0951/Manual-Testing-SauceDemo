@@ -393,3 +393,24 @@ The calculated tax percentage was consistent across all three products.
 ### Status
 
 **FAIL ❌**
+
+## TC-035 — Verify Finish Button Behavior on Checkout: Overview Page
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Overview** page.
+
+### Steps
+
+1. Click the **Finish** button.
+2. Observe the resulting page.
+
+### Expected Result
+
+The user is redirected to the **Checkout: Complete!** page.
+
+### Actual Result
+
+The user was redirected to the **Checkout: Complete!** page.
+
+### Status
+
+**PASS ✅**
