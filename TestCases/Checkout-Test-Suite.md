@@ -538,3 +538,34 @@ The user was redirected to the **Products** page.
 ### Status
 
 **PASS ✅**
+
+---
+
+## Checkout: Complete — UI Test Cases
+
+## TC-041 — Verify Checkout: Complete Page Layout Is Displayed Correctly
+
+**Preconditions:** User is logged in as `standard_user` and is on the **Checkout: Complete!** page after successfully completing an order.
+
+### Steps
+
+1. Observe the overall layout of the **Checkout: Complete!** page.
+2. Verify the order confirmation message is displayed.
+3. Verify the **Back Home** and **Generate PDF order** buttons are visible and properly positioned.
+4. Verify the page content is properly aligned and clearly visible.
+
+### Expected Result
+
+* Page content is properly aligned and clearly visible, with no clipping or overlap.
+* The confirmation message is clearly visible.
+* The **Back Home** and **Generate PDF order** buttons are visible and properly positioned.
+
+### Actual Result
+
+* Page content was properly aligned and clearly visible, with no clipping or overlap.
+* The confirmation message was clearly visible.
+* The **Back Home** and **Generate PDF order** buttons were visible and properly positioned.
+
+### Status
+
+**PASS ✅**
