@@ -569,3 +569,35 @@ The user was redirected to the **Products** page.
 ### Status
 
 **PASS ✅**
+
+---
+
+## Checkout — End-to-End Test Cases
+
+## TC-042 — Verify Checkout Cannot Be Completed with an Empty Cart
+
+**Preconditions:** User is logged in as `standard_user` and the Cart contains no products.
+
+### Steps
+
+1. Open Checkout from the empty Cart.
+2. Enter valid customer information on the **Checkout: Your Information** page.
+3. Continue to the **Checkout: Overview** page.
+4. Click the **Finish** button.
+5. Observe the resulting page.
+
+### Expected Result
+
+* The user should not be able to complete checkout when the Cart contains no products.
+* The user should not be redirected to the **Checkout: Complete!** page or receive an order confirmation.
+
+### Actual Result
+
+* The user was able to proceed through checkout with an empty Cart.
+* After clicking **Finish**, the user was redirected to the **Checkout: Complete!** page.
+* The **“Thank you for your order!”** confirmation message was displayed despite the Cart containing no products.
+* A PDF order receipt was also generated for the empty order. The receipt contained no products and displayed an Item total, Tax, and Total of $0.00.
+
+### Status
+
+**FAIL ❌**
