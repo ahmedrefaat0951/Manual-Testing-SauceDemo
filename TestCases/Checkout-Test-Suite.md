@@ -489,3 +489,32 @@ The **Payment Information**, **Shipping Information**, and **Price Total** secti
 ### Status
 
 **PASS ✅**
+
+---
+
+## Checkout: Complete — Functional Test Cases
+
+## TC-039 — Verify Generate PDF Order Creates an Order Receipt
+
+**Preconditions:** User is logged in as `standard_user` and is on the **Checkout: Complete!** page after successfully completing an order.
+
+### Steps
+
+1. Click the **Generate PDF order** button.
+2. Open the downloaded PDF.
+3. Verify the PDF contains the order information from the completed checkout.
+
+### Expected Result
+
+* A PDF order receipt is downloaded successfully.
+* The receipt contains the relevant order information, including customer details, ordered products, prices, tax, and total.
+
+### Actual Result
+
+* A PDF order receipt was downloaded successfully.
+* The receipt contained the relevant order information from the completed checkout, including customer details, ordered product, prices, tax, and total.
+
+### Status
+
+**PASS ✅**
+
