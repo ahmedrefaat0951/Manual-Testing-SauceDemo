@@ -601,3 +601,32 @@ The user was redirected to the **Products** page.
 ### Status
 
 **FAIL ❌**
+
+---
+
+## Checkout: Your Information — Additional Coverage
+
+### TC-043 — Verify Cancel Button Behavior on Checkout: Your Information Page
+
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
+
+### Steps
+
+1. Click the **Cancel** button.
+2. Observe the resulting page.
+3. Compare the Cart contents with the products previously added to the Cart.
+
+### Expected Result
+
+* The user is redirected to the **Cart** page.
+* The products previously added to the Cart remain unchanged.
+
+### Actual Result
+
+* The user was redirected to the **Cart** page.
+* The products previously added to the Cart remained unchanged.
+
+### Status
+
+**PASS ✅**
+
