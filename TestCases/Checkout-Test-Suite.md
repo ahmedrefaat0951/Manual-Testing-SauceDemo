@@ -518,3 +518,23 @@ The **Payment Information**, **Shipping Information**, and **Price Total** secti
 
 **PASS ✅**
 
+## TC-040 — Verify Back Home Button Returns User to Products Page
+
+**Preconditions:** User is logged in as `standard_user` and is on the **Checkout: Complete!** page after successfully completing an order.
+
+### Steps
+
+1. Click the **Back Home** button.
+2. Observe the resulting page.
+
+### Expected Result
+
+The user is redirected to the **Products** page.
+
+### Actual Result
+
+The user was redirected to the **Products** page.
+
+### Status
+
+**PASS ✅**
