@@ -8,7 +8,7 @@ This test suite contains both **Functional** and **UI** test cases covering the 
 
 ## TC-023 — Verify Checkout Can Be Opened from Cart
 
-**Preconditions:** User is logged in as `standard_user` and is on the Cart page with at least one product added to the cart.
+**Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the Cart page.
 
 ### Steps
 
@@ -27,9 +27,7 @@ The user was redirected to the **Checkout: Your Information** page.
 
 **PASS ✅**
 
----
-
-## Checkout: Your Information — Functional Test Cases
+# Checkout: Your Information — Functional Test Cases
 
 ## TC-024 — Verify User Can Proceed with Valid Customer Information
 
@@ -81,7 +79,7 @@ The user was redirected to the **Checkout: Overview** page without displaying a 
 
 ### Expected Result
 
-The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **First Name** field is required should be displayed.
+The user remains on the **Checkout: Your Information** page, and an error message indicating that the **First Name** field is required should be displayed.
 
 ### Actual Result
 
@@ -111,7 +109,7 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 
 ### Expected Result
 
-The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **Last Name** field is required should be displayed.
+The user remains on the **Checkout: Your Information** page, and an error message indicating that the **Last Name** field is required should be displayed.
 
 ### Actual Result
 
@@ -141,7 +139,7 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 
 ### Expected Result
 
-The user should remain on the **Checkout: Your Information** page, and an error message indicating that the **ZIP/Postal Code** field is required should be displayed.
+The user remains on the **Checkout: Your Information** page, and an error message indicating that the **ZIP/Postal Code** field is required should be displayed.
 
 ### Actual Result
 
@@ -151,9 +149,7 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 
 **PASS ✅**
 
----
-
-## Checkout: Your Information — UI Test cases
+# Checkout: Your Information — UI Test Cases
 
 ## TC-028 — Verify Checkout: Your Information Page Layout Is Displayed Correctly
 
@@ -216,9 +212,7 @@ The user remained on the **Checkout: Your Information** page, and the error mess
 
 **FAIL ❌**
 
----
-
-## Checkout: Your Information — Exploratory Testing
+# Checkout: Your Information — Exploratory Testing
 
 ### Exploratory Finding — Checkout Fields Accept Non-Standard Input
 
@@ -239,9 +233,7 @@ The application accepted these non-standard values without displaying a validati
 
 **Status:** Investigation required
 
----
-
-## Checkout: Overview — Functional Test Cases
+# Checkout: Overview — Functional Test Cases
 
 ## TC-030 — Verify Cart Products Are Preserved in Checkout: Overview
 
@@ -272,7 +264,7 @@ The application accepted these non-standard values without displaying a validati
 
 ## TC-031 — Verify Checkout: Overview Price Total Calculation
 
-**Preconditions:** User is logged in as `standard_user`, has the specified product added to the Cart, and is on the **Checkout: Overview** page.
+**Preconditions:** User is logged in as `standard_user`, has only the specified product from the Test Data added to the Cart, and is on the **Checkout: Overview** page.
 
 **Test Data:**
 
@@ -301,7 +293,7 @@ The calculated total was `$10.79`, which matched the displayed **Total** of `$10
 
 ## TC-032 — Verify Checkout: Overview Tax Calculation Consistency
 
-**Preconditions:** User is logged in as `standard_user`, has the specified product added to the Cart, and is on the **Checkout: Overview** page.
+**Preconditions:** User is logged in as `standard_user`, has only one of the specified products from the Test Data added to the Cart, and is on the **Checkout: Overview** page.
 
 **Test Data:**
 
@@ -313,9 +305,9 @@ The calculated total was `$10.79`, which matched the displayed **Total** of `$10
 
 ### Steps
 
-1. Observe the **Item total** and **Tax** values in the **Price Total** section for the **Sauce Labs Bike Light**.
+1. Observe the **Item total** and **Tax** values in the **Price Total** section for the selected product in the Cart.
 2. Calculate the tax percentage based on the displayed **Item total** and **Tax** values.
-3. Repeat steps 1 and 2 for the **Sauce Labs Backpack** and **Sauce Labs Onesie**.
+3. Repeat steps 1 and 2 for the other two products separately.
 4. Compare the calculated tax percentages for all three products.
 
 ### Expected Result
@@ -336,7 +328,7 @@ The calculated tax percentage was consistent across all three products.
 
 ## TC-033 — Verify Checkout: Overview Price Calculation for Multiple Products
 
-**Preconditions:** User is logged in as `standard_user`, has the specified products added to the Cart, and is on the **Checkout: Overview** page.
+**Preconditions:** User is logged in as `standard_user`, has the specified products from the Test Data added to the Cart, and is on the **Checkout: Overview** page.
 
 **Test Data:**
 
@@ -415,9 +407,7 @@ The user was redirected to the **Checkout: Complete!** page.
 
 **PASS ✅**
 
----
-
-## Checkout: Overview — UI Test Cases
+# Checkout: Overview — UI Test Cases
 
 ## TC-036 — Verify Checkout: Overview Page Layout Is Displayed Correctly
 
@@ -490,9 +480,7 @@ The **Payment Information**, **Shipping Information**, and **Price Total** secti
 
 **PASS ✅**
 
----
-
-## Checkout: Complete — Functional Test Cases
+# Checkout: Complete — Functional Test Cases
 
 ## TC-039 — Verify Generate PDF Order Creates an Order Receipt
 
@@ -512,7 +500,7 @@ The **Payment Information**, **Shipping Information**, and **Price Total** secti
 ### Actual Result
 
 * A PDF order receipt was downloaded successfully.
-* The receipt contained the relevant order information from the completed checkout, including customer details, ordered product, prices, tax, and total.
+* The receipt contained the relevant order information from the completed checkout, including customer details, ordered products, prices, tax, and total.
 
 ### Status
 
@@ -539,9 +527,7 @@ The user was redirected to the **Products** page.
 
 **PASS ✅**
 
----
-
-## Checkout: Complete — UI Test Cases
+# Checkout: Complete — UI Test Cases
 
 ## TC-041 — Verify Checkout: Complete Page Layout Is Displayed Correctly
 
@@ -570,9 +556,7 @@ The user was redirected to the **Products** page.
 
 **PASS ✅**
 
----
-
-## Checkout — End-to-End Test Cases
+# Checkout — End-to-End Test Cases
 
 ## TC-042 — Verify Checkout Cannot Be Completed with an Empty Cart
 
@@ -588,8 +572,8 @@ The user was redirected to the **Products** page.
 
 ### Expected Result
 
-* The user should not be able to complete checkout when the Cart contains no products.
-* The user should not be redirected to the **Checkout: Complete!** page or receive an order confirmation.
+* The user cannot complete checkout when the Cart contains no products.
+* The user is not redirected to the **Checkout: Complete!** page and does not receive an order confirmation.
 
 ### Actual Result
 
@@ -602,11 +586,9 @@ The user was redirected to the **Products** page.
 
 **FAIL ❌**
 
----
+# Checkout: Your Information — Additional Coverage
 
-## Checkout: Your Information — Additional Coverage
-
-### TC-043 — Verify Cancel Button Behavior on Checkout: Your Information Page
+## TC-043 — Verify Cancel Button Behavior on Checkout: Your Information Page
 
 **Preconditions:** User is logged in as `standard_user`, has at least one product added to the Cart, and is on the **Checkout: Your Information** page.
 
@@ -629,4 +611,3 @@ The user was redirected to the **Products** page.
 ### Status
 
 **PASS ✅**
-
