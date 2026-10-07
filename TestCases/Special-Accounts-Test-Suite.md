@@ -69,3 +69,36 @@ The selected sorting options did not change the product order. The products rema
 ### Status
 
 **FAIL ❌**
+
+## TC-046 — Verify Products Can Be Added to Cart
+
+**Preconditions:** User is logged in as `problem_user` and is on the Products page.
+
+### Test Data
+
+* Products:
+
+  * `Sauce Labs Backpack`
+  * `Sauce Labs Bike Light`
+  * `Sauce Labs Bolt T-Shirt`
+  * `Sauce Labs Fleece Jacket`
+  * `Sauce Labs Onesie`
+  * `Test.allTheThings() T-Shirt (Red)`
+
+### Steps
+
+1. Click the **Add to cart** button for each product.
+2. Observe the button and the Cart icon state after each attempt.
+
+### Expected Result
+
+Each selected product is added to the Cart.
+
+### Actual Result
+
+* `Sauce Labs Backpack`, `Sauce Labs Bike Light`, and `Sauce Labs Onesie` were added to the Cart successfully.
+* `Sauce Labs Bolt T-Shirt`, `Sauce Labs Fleece Jacket`, and `Test.allTheThings() T-Shirt (Red)` were not added to the Cart.
+
+### Status
+
+**FAIL ❌**
