@@ -102,3 +102,28 @@ Each selected product is added to the Cart.
 ### Status
 
 **FAIL ❌**
+
+## TC-047 — Verify Products Can Be Removed from Cart
+
+**Preconditions:** User is logged in as `problem_user` and is on the Products page with the following products added to the Cart:
+
+* `Sauce Labs Backpack`
+* `Sauce Labs Bike Light`
+* `Sauce Labs Onesie`
+
+### Steps
+
+1. Click the **Remove** button for each product.
+2. Observe the button and the Cart icon state after each attempt.
+
+### Expected Result
+
+Each selected product is removed from the Cart, and the corresponding **Remove** button changes to **Add to cart**.
+
+### Actual Result
+
+The selected products were not removed from the Cart. The **Remove** buttons remained unchanged, and the Cart icon continued to display a count of **3**.
+
+### Status
+
+**FAIL ❌**
