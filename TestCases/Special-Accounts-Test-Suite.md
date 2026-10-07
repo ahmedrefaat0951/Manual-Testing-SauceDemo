@@ -36,3 +36,36 @@ The user was not logged in, and the following error message was displayed:
 ### Status
 
 **PASS ✅**
+
+# Account: `problem_user` — Test Cases
+
+## TC-045 — Verify Product Sorting
+
+**Preconditions:** User is logged in as `problem_user` and is on the Products page.
+
+### Test Data
+
+* Sorting options:
+
+  * `Name (Z to A)`
+  * `Price (low to high)`
+  * `Price (high to low)`
+
+### Steps
+
+1. Open the **Sort** dropdown.
+2. Select **Name (Z to A)**.
+3. Verify the product order.
+4. Repeat steps 1–3 for **Price (low to high)** and **Price (high to low)**.
+
+### Expected Result
+
+The products are reordered according to the selected sorting option.
+
+### Actual Result
+
+The selected sorting options did not change the product order. The products remained in **Name (A to Z)** order.
+
+### Status
+
+**FAIL ❌**
