@@ -168,3 +168,24 @@ The product titles navigated to incorrect product details pages or an error page
 ### Status
 
 **FAIL ❌**
+
+## TC-049 — Verify Product Images
+
+**Preconditions:** User is logged in as `problem_user` and is on the Products page.
+
+### Steps
+
+1. Observe the image displayed for each product.
+2. Compare each image with its corresponding product.
+
+### Expected Result
+
+Each product displays the correct image corresponding to its name.
+
+### Actual Result
+
+The product images displayed a pug holding a tennis ball instead of the expected product images.
+
+### Status
+
+**FAIL ❌**
