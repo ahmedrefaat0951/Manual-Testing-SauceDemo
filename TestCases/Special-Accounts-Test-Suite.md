@@ -127,3 +127,44 @@ The selected products were not removed from the Cart. The **Remove** buttons rem
 ### Status
 
 **FAIL ❌**
+
+## TC-048 — Verify Product Title Navigation
+
+**Preconditions:** User is logged in as `problem_user` and is on the Products page.
+
+### Test Data
+
+- Product titles:
+  - `Sauce Labs Backpack`
+  - `Sauce Labs Bike Light`
+  - `Sauce Labs Bolt T-Shirt`
+  - `Sauce Labs Fleece Jacket`
+  - `Sauce Labs Onesie`
+  - `Test.allTheThings() T-Shirt (Red)`
+
+### Steps
+
+1. Click each product title individually, following the order in the Test Data list.
+2. Observe the resulting product details page.
+3. Navigate back to the Products page before proceeding to the next product.
+
+### Expected Result
+
+The product titles navigate to the correct product details pages.
+
+### Actual Result
+
+The product titles navigated to incorrect product details pages or an error page, as shown below:
+
+| Product Title Clicked | Resulting Page |
+|---|---|
+| `Sauce Labs Backpack` | `Sauce Labs Fleece Jacket` |
+| `Sauce Labs Bike Light` | `Sauce Labs Bolt T-Shirt` |
+| `Sauce Labs Bolt T-Shirt` | `Sauce Labs Onesie` |
+| `Sauce Labs Fleece Jacket` | `ITEM NOT FOUND` |
+| `Sauce Labs Onesie` | `Test.allTheThings() T-Shirt (Red)` |
+| `Test.allTheThings() T-Shirt (Red)` | `Sauce Labs Backpack` |
+
+### Status
+
+**FAIL ❌**
