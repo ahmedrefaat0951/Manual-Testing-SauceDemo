@@ -189,3 +189,37 @@ The product images displayed a pug holding a tennis ball instead of the expected
 ### Status
 
 **FAIL ❌**
+
+---
+
+## TC-050 — Verify Product Title Navigation from Cart
+
+**Preconditions:** User is logged in as `problem_user`, is on the Cart page and the three products that can be successfully added to the cart are present.
+
+### Steps
+
+1. Locate a product in the Cart.
+2. Click its product title.
+3. Observe the resulting Product Details page.
+4. Return to the Cart page.
+5. Repeat for the remaining products.
+
+### Expected Result
+Clicking each product title should navigate to the corresponding Product Details page, displaying the correct product information.
+
+### Actual Result
+Clicking each product title navigated to an incorrect Product Details page. The resulting pages displayed different product names, descriptions, and prices.
+
+| Product title clicked | Resulting page | Resulting price |
+|---|---|---|
+| Sauce Labs Backpack ($29.99) | Sauce Labs Fleece Jacket | $49.99 |
+| Sauce Labs Bike Light ($9.99) | Sauce Labs Bolt T-Shirt | $15.99 |
+| Sauce Labs Onesie ($7.99) | Test.allTheThings() T-Shirt (Red) | $15.99 |
+
+### Status
+
+**FAIL ❌**
+
+### Scope Note
+
+Only the three products that can be successfully added to the cart are included. The remaining three products are excluded due to the Add to Cart defect documented in BUG-007.
