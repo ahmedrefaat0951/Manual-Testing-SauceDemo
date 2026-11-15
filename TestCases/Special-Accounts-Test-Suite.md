@@ -223,3 +223,42 @@ Clicking each product title navigated to an incorrect Product Details page. The 
 ### Scope Note
 
 Only the three products that can be successfully added to the cart are included. The remaining three products are excluded due to the Add to Cart defect documented in BUG-007.
+
+---
+
+## TC-051 — Verify Checkout Customer Information Fields Accept Input Independently
+
+**Preconditions:** User is logged in as `problem_user`, has at least one product added to the Cart, and is on the Checkout: Your Information page.
+
+**Test Data:**
+
+- First Name: `Ahmed`
+- Last Name: `Refaat`
+- ZIP/Postal Code: `1234`
+
+### Steps
+
+1. Enter `Ahmed` in the First Name field.
+2. Click the Last Name field.
+3. Enter `Refaat` one character at a time.
+4. Observe the First Name and Last Name fields while entering the text.
+5. Enter `1234` in the ZIP/Postal Code field.
+6. Observe the values displayed in all three fields.
+
+### Expected Result
+
+- The First Name field retains the value `Ahmed`.
+- The Last Name field retains the value `Refaat`.
+- The ZIP/Postal Code field retains the value `1234`.
+
+### Actual Result
+
+- The First Name field initially accepted and displayed `Ahmed`.
+- When entering `Refaat` in the Last Name field, each keystroke replaced the existing value in the First Name field.
+- The First Name field displayed only the most recently entered character from the last name field.
+- The Last Name field remained empty throughout the process.
+- The ZIP/Postal Code field accepted and displayed `1234`.
+
+### Status
+
+**FAIL ❌**
