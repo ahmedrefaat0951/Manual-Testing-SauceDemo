@@ -262,3 +262,40 @@ Only the three products that can be successfully added to the cart are included.
 ### Status
 
 **FAIL ❌**
+
+# Account: `error_user` — Test Cases
+
+## TC-052 — Verify Product Sorting
+
+**Preconditions:** User is logged in as `error_user` and is on the Products page.
+
+### Test Data
+
+- Sorting options:
+  - `Name (Z to A)`
+  - `Price (low to high)`
+  - `Price (high to low)`
+
+### Steps
+
+1. Open the Sort dropdown.
+2. Select Name (Z to A).
+3. Observe the resulting browser alert and product order.
+4. Dismiss the alert.
+5. Repeat steps 1–4 for Price (low to high) and Price (high to low).
+
+### Expected Result
+
+The products are reordered according to the selected sorting option.
+
+### Actual Result
+
+Selecting any of the three sorting options triggered a browser alert displaying the following message:
+
+> Sorting is broken! This error has been reported to Backtrace.
+
+After dismissing the alert, the selected sorting option remained Name (A to Z), and the product order remained unchanged.
+
+### Status
+
+**FAIL ❌**
